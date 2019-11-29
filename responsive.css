@@ -1,0 +1,45 @@
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+    #stack1, #stack2, #stack3 {display: block;}
+    #medium, #large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 768px){
+    body {
+        background-color: green;
+    }
+    #stack1 {width: 33%;}
+    #stack2 {width: 66%;}
+    #stack3 {width: 100%;}
+
+
+    #small, #large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: blue;
+    }
+
+    #stack1, #stack2, #stack3 {display: inline-block;}
+    #stack1 {width: 33%;}
+    #stack2 {width: 33%;}
+    #stack3 {width: 33%;}
+
+
+    #small, #medium {
+        display: none;
+    }
+}
+
+.small {font-size: small;}
+
+.medium {font-size: medium;}
+
+.large {font-size: large;}
